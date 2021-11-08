@@ -8,11 +8,19 @@
 
 sh local-start
 
-Then enter to http://localhost:8080
+Enter to http://localhost:3000 to access to the frontend
+
+#### Checking backend status
+
+curl --location --request GET 'localhost:8080/ping'
+
+#### Get Spiral
+
+curl --location --request GET 'localhost:8080/spiral?rows=5&cols=5'
 
 ## Run test
 
-sh run-test 
+sh run-test
 
 Notes: Only backend test was implemented. TODO: Implement frontend test.
 
@@ -27,8 +35,9 @@ Technologies: Golang.
 The backend was built using hexagonal architecture.
 
 #### Scaffolding
-- cmd 
-  - httpserver (entrypoints to the apps) 
+
+- cmd
+  - httpserver (entrypoints to the apps)
 - internal
   - core (contain all the business logic)
     - domain (contain all the business domains)
@@ -41,6 +50,3 @@ The backend was built using hexagonal architecture.
 ### Frontend
 
 Technologies: NodeJS & React
-
-
-

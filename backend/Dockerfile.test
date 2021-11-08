@@ -1,0 +1,6 @@
+FROM golang:1.14-alpine AS builder
+
+WORKDIR testdir
+COPY . .
+
+ENTRYPOINT ["go", "test", "-v", "./..."]
