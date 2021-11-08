@@ -26,7 +26,7 @@ Notes: Only backend test was implemented. TODO: Implement frontend test.
 
 Technologies: Golang.
 
-The backend was built using hexagonal architecture.
+The backend is using hexagonal architecture [More info](https://alistair.cockburn.us/hexagonal-architecture/).
 
 #### Scaffolding
 - cmd 
