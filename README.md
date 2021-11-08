@@ -6,13 +6,13 @@
 
 ## Run locally
 
-sh local-start
+sh local-start.sh
 
 Then enter to http://localhost:8080
 
 ## Run test
 
-sh run-test 
+sh run-test.sh 
 
 Notes: Only backend test was implemented. TODO: Implement frontend test.
 
