@@ -42,5 +42,9 @@ The backend was built using hexagonal architecture.
 
 Technologies: NodeJS & React
 
-
+### TODO
+- Add test to frontend
+- Add observability
+- Add authentication
+- Improve frontend styles
 
