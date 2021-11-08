@@ -1,28 +1,46 @@
-Spiral APP
+# Fibonacci Spiral
 
-Requirements
+## Requirements
 
-Docker (tested in 20.10.6)
+- Docker (tested in 20.10.6)
 
-Run locally
+## Run locally
 
 sh local-start
 
-http://localhost:8080
+Then enter to http://localhost:8080
 
-Backend
+## Run test
 
-Language: Golang.
+sh run-test 
+
+Notes: Only backend test was implemented. TODO: Implement frontend test.
+
+## General Architecture
+
+TODO: Insert image here.
+
+### Backend
+
+Technologies: Golang.
 
 The backend was built using hexagonal architecture.
 
-cmd
--> httpserver
--> main.go
-internal
--> core
--> handler
--> repository
-pkg
+#### Scaffolding
+- cmd 
+  - httpserver (entrypoints to the apps) 
+- internal
+  - core (contain all the business logic)
+    - domain (contain all the business domains)
+    - port (contain how the core module will interacts with the external actors(handlers and repositories)
+    - service (implement the business logic)
+  - handler (external actors to know how to interact with the core)
+  - repository (external actors that implements the functions that core understand
+- pkg (code to open to use by external modules)
 
-Frontend
+### Frontend
+
+Technologies: NodeJS & React
+
+
+
