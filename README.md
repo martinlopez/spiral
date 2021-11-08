@@ -12,11 +12,13 @@ Enter to http://localhost:3000 to access to the frontend
 
 #### Checking backend status
 
-curl --location --request GET 'localhost:8080/ping'
-
+```
+curl --location --request GET 'localhost:8080/ping'`
+```
 #### Get Spiral
-
+```
 curl --location --request GET 'localhost:8080/spiral?rows=5&cols=5'
+```
 
 ## Run test
 
